@@ -5,7 +5,7 @@ function push(arr, callback) {
 };
 push(arr, callback);
 
-function callback() {}
+function callback() {};
 
 
 
@@ -16,7 +16,7 @@ function forEach(arr, callback) {
   };
 forEach(arr, callback);
 
-function callback() {}
+function callback() {};
 
 
 
@@ -30,7 +30,7 @@ function map(arr, callback) {
 map(arr, callback);
 console.log(newMap);
 
-function callback() {}
+function callback() {};
 
 
 
@@ -44,7 +44,7 @@ function some(arr, callback) {
 };
 some(arr, callback);
 
-function callback() {}
+function callback() {};
 
 
 
@@ -58,7 +58,7 @@ function every(arr, callback) {
 };
 every(arr, callback);
 
-function callback() {}
+function callback() {};
 
 
 

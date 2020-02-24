@@ -1,11 +1,8 @@
-function push(arr, callback) {
-  for (var i = 0; i < arr.length; i++) {
-    arr[arr.length] = callback(arr[i], i, arr);
-  }
+function push(arr, item) {
+  arr[arr.length] = item;
 };
-push(arr, callback);
-
-function callback() {};
+push(arr, item);
+console.log(arr);
 
 
 
@@ -50,7 +47,7 @@ function callback() {};
 
 function every(arr, callback) {
   for (var i = 0; i < arr.length; i++) {
-    if (callback(arr[i], i, arr)) {
+    if (!callback(arr[i], i, arr)) {
       return false;
     }
   }
@@ -74,4 +71,4 @@ function filter(arr, callback) {
 filter(arr, callback);
 console.log(newfilter);
 
-function callback() {}
+function callback() {};
